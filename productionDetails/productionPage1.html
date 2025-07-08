@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazardous Waste Document</title>
+    <script>
+        // Redirect to second page after 5 seconds
+        setTimeout(() => {
+          window.location.href = "productionPage2.html";
+        }, 5000);
+    </script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .rotated-container {
+            position: absolute;
+            width: 100vh;
+            height: 100vw;
+            transform: rotate(270deg);
+            transform-origin: center center;
+            left: 50%;
+            top: 50%;
+            margin-left: -50vh;
+            margin-top: -50vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .document {
+            background-color: white;
+            width: 95%;
+            height: 90%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .content {
+            flex: 1;
+            overflow: auto;
+        }
+        
+        .title {
+            background-color: #4CAF50;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            color: white;
+            padding: 10px;
+        }
+        
+        .section-title {
+            background-color: #138deb;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
+            padding: 10px;
+            color: white;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            table-layout: fixed;
+        }
+        
+        th {
+            background-color: #48b5d0;
+            color: white;
+            text-align: left;
+            padding: 12px;
+            border: 1px solid #ddd;
+            font-weight: bold;
+            word-wrap: break-word;
+        }
+        
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+            word-wrap: break-word;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Column width adjustments */
+        .col-sr { width: 8%; }
+        .col-product { width: 20%; }
+        .col-chemicals { width: 36%; }
+        .col-purpose { width: 36%; }
+
+        .footer {
+            margin-top: auto;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        @media (max-aspect-ratio: 1/1) {
+            /* Adjustments for portrait-oriented displays */
+            .document {
+                width: 90%;
+                height: 85%;
+                padding: 15px;
+            }
+            
+            .title {
+                font-size: 20px;
+                padding: 8px;
+            }
+            
+            .section-title {
+                font-size: 16px;
+                padding: 8px;
+            }
+            
+            th, td {
+                padding: 8px;
+                font-size: 14px;
+            }
+            
+            .footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rotated-container">
+        <div class="document">
+            <div class="content">
+                <div class="title">Information related to Air, Water and Hazardous waste generation</div>
+                
+                <div class="section-title">Production Details:</div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-sr">Sr. No.</th>
+                            <th class="col-product">Products Manufactured</th>
+                            <th class="col-chemicals">Details of Hazardous Chemicals used and Qty</th>
+                            <th class="col-purpose">Purpose Of Hazardous Chemicals Used</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-sr">1</td>
+                            <td class="col-product">Billion</td>
+                            <td class="col-chemicals">HF 46 T/M</td>
+                            <td class="col-purpose">Process Need</td>
+                        </tr>
+                        <tr>
+                            <td class="col-sr">2</td>
+                            <td class="col-product">Round bars</td>
+                            <td class="col-chemicals">HCL 213 T/M</td>
+                            <td class="col-purpose">Process Need</td>
+                        </tr>
+                        <tr>
+                            <td class="col-sr">3</td>
+                            <td class="col-product">SG Wits Reds</td>
+                            <td class="col-chemicals">HNO3 23 T/M</td>
+                            <td class="col-purpose">Process Need</td>
+                        </tr>
+                        <tr>
+                            <td class="col-sr">4</td>
+                            <td class="col-product">Angles</td>
+                            <td class="col-chemicals">NaOH 0 T/M</td>
+                            <td class="col-purpose">Process Need</td>
+                        </tr>
+                        <tr>
+                            <td class="col-sr">5</td>
+                            <td class="col-product">-</td>
+                            <td class="col-chemicals">Cao 152 T/M</td>
+                            <td class="col-purpose">Process Need</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="footer">
+                © 2023 Viraj Profiles Pvt. Ltd. | All Rights Reserved | Document ID: VP-ENV-2023-001
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazardous Waste Document</title>
+    <script>
+        // Redirect to second page after 5 seconds
+        setTimeout(() => {
+          window.location.href = "productionPage2.html";
+        }, 5000);
+    </script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .rotated-container {
+            position: absolute;
+            width: 100vh;
+            height: 100vw;
+            transform: rotate(270deg);
+            transform-origin: center center;
+            left: 50%;
+            top: 50%;
+            margin-left: -50vh;
+            margin-top: -50vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .document {
+            background-color: white;
+            width: 95%;
+            height: 90%;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .content {
+            flex: 1;
+            overflow: auto;
+        }
+        
+        .title {
+            background-color: #4CAF50;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 25px;
+            text-decoration: underline;
+            color: white;
+            padding: 10px;
+        }
+        
+        .section-title {
+            background-color: #138deb;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 50px;
+        }
+        
+        th {
+            background-color: #48b5d0;
+            color: white;
+            text-align: left;
+            padding: 50px;
+            border: 1px solid #ddd;
+            font-weight: bold;
+        }
+        
+        td {
+            padding: 20px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .footer {
+            margin-top: auto;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="rotated-container">
+        <div class="document">
+            <div class="content">
+                <div class="title">Information related to Air, Water and Hazardous waste generation</div>
+                
+                <div class="section-title">Production Details:</div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Products Manufactured</th>
+                            <th>Details of Hazardous Chemicals used and Qty</th>
+                            <th>Purpose Of Hazardous Chemicals Used</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Billion</td>
+                            <td>HF 46 T/M</td>
+                            <td>Process Need</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Round bars</td>
+                            <td>HCL 213 T/M</td>
+                            <td>Process Need</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>SG Wits Reds</td>
+                            <td>HNO3 23 T/M</td>
+                            <td>Process Need</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Angles</td>
+                            <td>NaOH 0 T/M</td>
+                            <td>Process Need</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>-</td>
+                            <td>Cao 152 T/M</td>
+                            <td>Process Need</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="footer">
+                © 2023 Viraj Profiles Pvt. Ltd. | All Rights Reserved | Document ID: VP-ENV-2023-001
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->

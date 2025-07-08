@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Emissions Monitoring</title>
+    <script>
+        // Redirect to second page after 5 seconds
+        setTimeout(() => {
+            window.location.href = "airEmission4.html";
+        }, 5000);
+    </script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .rotated-container {
+            position: absolute;
+            width: 100vh;
+            height: 100vw;
+            transform: rotate(270deg);
+            transform-origin: center center;
+            left: 50%;
+            top: 50%;
+            margin-left: -50vh;
+            margin-top: -50vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .document {
+            background-color: white;
+            width: 95%;
+            height: 90%;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .content {
+            flex: 1;
+            overflow: auto;
+        }
+        
+        .title {
+            background-color: #4CAF50;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 25px;
+            text-decoration: underline;
+            color: white;
+            padding: 10px;
+        }
+        
+        .section-title {
+            background-color: #138deb;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding: 20px;
+            color: white;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 50px;
+        }
+        
+        th {
+            background-color: #48b5d0;
+            color: white;
+            text-align: left;
+            padding: 15px;
+            border: 1px solid #ddd;
+            font-weight: bold;
+        }
+        
+        td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .merged-row {
+            background-color: #e6f7ff;
+        }
+
+        .parameter-cell {
+            padding-left: 30px;
+        }
+
+        .sub-header {
+            background-color: #3aa8d1;
+            text-align: center;
+        }
+
+        .footer {
+            margin-top: auto;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .blink {
+            animation: blink-animation 2s steps(2, start) infinite;
+        }
+
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rotated-container">
+        <div class="document">
+            <div class="content">
+                <div class="title">Information related to Air, Water and Hazardous waste generation</div>
+                
+                <div class="section-title">V. Air Emission:</div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Source of Air Pollution</th>
+                            <th colspan="3" class="sub-header">Parameters Monitored w.r.t. Air</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Parameter</th>
+                            <th>Limit as per MPCB</th>
+                            <th>Monitored Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- First Source -->
+                        <tr class="merged-row">
+                            <td rowspan="3">S-1</td>
+                            <td rowspan="3">CEMS-Primary FES I/F (SMS-1)</td>
+                            <td>TPM</td>
+                            <td>50 Mg/Nm³</td>
+                            <td class="blink">36.16</td>
+                        </tr>
+                        <tr class="merged-row">
+                            <td>SO2</td>
+                            <td>NA Mg/Nm³</td>
+                            <td class="blink">53.1</td>
+                        </tr>
+                        <tr class="merged-row">
+                            <td>NO</td>
+                            <td>NA Mg/Nm³</td>
+                            <td class="blink">49.18</td>
+                        </tr>
+                        
+                        <!-- Second Source -->
+                        <tr>
+                            <td rowspan="3">S-2</td>
+                            <td rowspan="3">CEMS-Primary FES of ADD (SMS-1)</td>
+                            <td>TPM</td>
+                            <td>50 Mg/Nm³</td>
+                            <td class="blink">42.64</td>
+                        </tr>
+                        <tr>
+                            <td>SO2</td>
+                            <td>NA Mg/Nm³</td>
+                            <td class="blink">53.09</td>
+                        </tr>
+                        <tr>
+                            <td>NO</td>
+                            <td>NA Mg/Nm³</td>
+                            <td class="blink">62.74</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="footer">
+                © 2023 Viraj Profiles Pvt. Ltd. | All Rights Reserved | Document ID: VP-ENV-2023-001
+            </div>
+        </div>
+    </div>
+</body>
+</html>

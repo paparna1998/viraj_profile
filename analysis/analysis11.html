@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Analysis Report</title>
+    <script>
+        // Redirect to second page after 5 seconds
+        setTimeout(() => {
+            window.location.href = "analysis12.html"; // change this if your file name is different
+        }, 5000); // 5000 ms = 5 seconds
+    </script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .rotated-container {
+            position: absolute;
+            width: 100vh;
+            height: 100vw;
+            transform: rotate(270deg);
+            transform-origin: center center;
+            left: 50%;
+            top: 50%;
+            margin-left: -50vh;
+            margin-top: -50vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .document {
+            background-color: white;
+            width: 95%;
+            height: 90%;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            overflow: auto;
+        }
+        
+        .title {
+            background-color: #4CAF50;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            color: white;
+            padding: 10px;
+        }
+        
+        .section-title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 25px;
+            color: #333;
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        
+        th {
+            background-color: #48b5d0;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border: 1px solid #ddd;
+            font-weight: bold;
+        }
+        
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .parameter-cell {
+            text-align: left;
+        }
+        
+        .limit-cell {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="rotated-container">
+        <div class="document">
+            <h1 class="title">Information related to Air, Water and Hazardous waste generation</h1>
+            <h2 class="section-title">Drinking Water - Location - WRM Canteen</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>SR NO</th>
+                        <th>PARAMETERS</th>
+                        <th>UNIT</th>
+                        <th>RESULT</th>
+                        <th>LIMITS IS 10500: 2012 (RA 2018)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="parameter-cell">Colour</td>
+                        <td>Pt/Co</td>
+                        <td>0.10</td>
+                        <td class="limit-cell"><5.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="parameter-cell">Odour</td>
+                        <td>--</td>
+                        <td>Agreeable</td>
+                        <td class="limit-cell">Agreeable</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="parameter-cell">Turbidity</td>
+                        <td>NTU</td>
+                        <td>0.50</td>
+                        <td class="limit-cell"><1.00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="parameter-cell">Taste</td>
+                        <td>--</td>
+                        <td>Agreeable</td>
+                        <td class="limit-cell">Agreeable</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="parameter-cell">Total Suspended Solids</td>
+                        <td>mg/lit</td>
+                        <td>2.00</td>
+                        <td class="limit-cell">Not Specified</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="parameter-cell">Total Dissolved Solids</td>
+                        <td>mg/lit</td>
+                        <td>84.00</td>
+                        <td class="limit-cell"><500.00</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="parameter-cell">pH</td>
+                        <td>--</td>
+                        <td>7.46</td>
+                        <td class="limit-cell">6.5-8.5</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="parameter-cell">Electric Conductivity</td>
+                        <td>µS/cm</td>
+                        <td>150.00</td>
+                        <td class="limit-cell">Not Specified</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="parameter-cell">Total Hardness CaCO₃</td>
+                        <td>mg/lit</td>
+                        <td>20.00</td>
+                        <td class="limit-cell"><200.00</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="parameter-cell">Total Alkalinity as CaCO₃</td>
+                        <td>mg/lit</td>
+                        <td>48.00</td>
+                        <td class="limit-cell"><200.00</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td class="parameter-cell">Chlorides as Cl</td>
+                        <td>mg/lit</td>
+                        <td>8.00</td>
+                        <td class="limit-cell"><250.00</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="parameter-cell">Sulphate as SO₄</td>
+                        <td>mg/lit</td>
+                        <td>10.00</td>
+                        <td class="limit-cell"><200.00</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td class="parameter-cell">Nitrate as NO₃-N</td>
+                        <td>mg/lit</td>
+                        <td>0.28</td>
+                        <td class="limit-cell"><45.00</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td class="parameter-cell">Phenolic Compounds as C6H5OH</td>
+                        <td>mg/lit</td>
+                        <td>NIL</td>
+                        <td class="limit-cell"><0.001</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td class="parameter-cell">Oil and Grease</td>
+                        <td>mg/lit</td>
+                        <td>NIL</td>
+                        <td class="limit-cell">Not Specified</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td class="parameter-cell">Fluoride as F⁻</td>
+                        <td>mg/lit</td>
+                        <td>NIL</td>
+                        <td class="limit-cell"><1.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

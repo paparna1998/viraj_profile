@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazardous Waste Report</title>
+    <script>
+        // Redirect to second page after 5 seconds
+        setTimeout(() => {
+            window.location.href = "effluentGen2.html";
+        }, 5000);
+    </script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .rotated-container {
+            position: absolute;
+            width: 100vh;
+            height: 100vw;
+            transform: rotate(270deg);
+            transform-origin: center center;
+            left: 50%;
+            top: 50%;
+            margin-left: -50vh;
+            margin-top: -50vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .document {
+            background-color: white;
+            width: 95%;
+            height: 90%;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .content {
+            flex: 1;
+            overflow: auto;
+        }
+        
+        .title {
+            background-color: #4CAF50;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            color: white;
+            padding: 10px;
+        }
+        
+        .section-title {
+            background-color: #138deb;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 25px;
+            color: #333;
+            padding: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        th {
+            background-color: #48b5d0;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border: 1px solid #ddd;
+            font-weight: bold;
+        }
+        
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .footer {
+            margin-top: auto;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="rotated-container">
+        <div class="document">
+            <div class="content">
+                <h1 class="title">Information related to Air, Water and Hazardous waste generation</h1>
+                
+                <h2 class="section-title">VI. Effluent Generated:</h2>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="1">Sr. No.</th>
+                            <th colspan="2">Source of Effluent, Discharge with Quantity</th>
+                            <th colspan="3">Mode of Disposal Of Treatment Effluent</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>Source/Quality</th>
+                            <th>Treatment Method</th>
+                            <th colspan="3"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Industrial Waste Water-WRM 100 CMD Process</td>
+                            <td>Activated Sludge Process</td>
+                            <td colspan="3">100 % Recycling</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Industrial Waste Water-WRM 100 CMD Process</td>
+                            <td>Activated Sludge Process</td>
+                            <td colspan="3">100 % Recycling</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Domestic Waste Water-SMS 1 75 CMD Process</td>
+                            <td>MBBR Technology</td>
+                            <td colspan="3">100 % Recycling</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Domestic Waste Water-VSL 75 CMD</td>
+                            <td>MBBR Technology</td>
+                            <td colspan="3">100 % Recycling</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="footer">
+                © 2023 Viraj Profiles Pvt. Ltd. | All Rights Reserved | Document ID: VP-ENV-2023-001
+            </div>
+        </div>
+    </div>
+</body>
+</html>

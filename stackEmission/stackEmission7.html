@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Sampling</title>
+    <script>
+        // Redirect to second page after 5 seconds
+        setTimeout(() => {
+            window.location.href = "stackEmission8.html"; // change this if your file name is different
+        }, 5000); // 5000 ms = 5 seconds
+    </script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .rotated-container {
+            position: absolute;
+            width: 100vh;
+            height: 100vw;
+            transform: rotate(270deg);
+            transform-origin: center center;
+            left: 50%;
+            top: 50%;
+            margin-left: -50vh;
+            margin-top: -50vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .document {
+            background-color: white;
+            width: 95%;
+            height: 90%;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            overflow: auto;
+        }
+        
+        .title {
+            background-color: #4CAF50;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            color: white;
+            padding: 10px;
+        }
+        
+        .section-title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 25px;
+            color: #333;
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        th {
+            background-color: #48b5d0;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border: 1px solid #ddd;
+            font-weight: bold;
+        }
+        
+        td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .result-cell {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="rotated-container">
+        <div class="document">
+            <h1 class="title">Information related to Air, Water and Hazardous waste generation</h1>
+            <h2 class="section-title">STACK EMISSION MONITORING</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>SR. NO.</th>
+                        <th>DESCRIPTION</th>
+                        <th>UNIT</th>
+                        <th>RESULT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>STACK LOCATION</td>
+                        <td></td>
+                        <td class="result-cell">Thermic Fluid Heater-1(VSL)</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>TIME OF SAMPLING (00.00)</td>
+                        <td>Hrs</td>
+                        <td class="result-cell">17:40</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>MATERIAL OF STACK</td>
+                        <td></td>
+                        <td class="result-cell">MS</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>STACK HEIGHT</td>
+                        <td>Mtr</td>
+                        <td class="result-cell">15</td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>TYPE OF STACK</td>
+                        <td></td>
+                        <td class="result-cell">Round</td>
+                    </tr>
+                    <tr>
+                        <td>06</td>
+                        <td>FUEL TYPE</td>
+                        <td></td>
+                        <td class="result-cell">PNG</td>
+                    </tr>
+                    <tr>
+                        <td>07</td>
+                        <td>FLUE GAS TEMPERATURE</td>
+                        <td>Deg K</td>
+                        <td class="result-cell">395</td>
+                    </tr>
+                    <tr>
+                        <td>08</td>
+                        <td>DIFFERENTIAL PRESSURE</td>
+                        <td>MMWC</td>
+                        <td class="result-cell">5.4</td>
+                    </tr>
+                    <tr>
+                        <td>09</td>
+                        <td>VELOCITY</td>
+                        <td>M/Sec</td>
+                        <td class="result-cell">8.95</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>DIAMETER OF STACK</td>
+                        <td>M</td>
+                        <td class="result-cell">0.6</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>STACK AREA</td>
+                        <td>M²</td>
+                        <td class="result-cell">0.2827</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>GAS VOLUME</td>
+                        <td>Nm³/Hr</td>
+                        <td class="result-cell">6871.80</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>TOTAL PARTICULATE MATTER</td>
+                        <td>mg/Nm³</td>
+                        <td class="result-cell">8.75</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>SULPHUR DIOXIDE (SO₂)</td>
+                        <td>Kg/Day</td>
+                        <td class="result-cell">NIL</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>OXIDES OF NITROGEN (NOx)</td>
+                        <td>mg/Nm³</td>
+                        <td class="result-cell">12.64</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
